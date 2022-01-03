@@ -3,7 +3,7 @@ import random
 import numpy as np
 import pyperclip
 
-szamok = np.arange(0,10)
+szamok = np.arange(0, 10)
 str_szamok = ""
 
 for z in szamok:
