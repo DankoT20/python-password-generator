@@ -1,6 +1,7 @@
 import string
 import random
 import numpy as np
+import pyperclip
 
 szamok = np.arange(0,10)
 str_szamok = ""
@@ -20,8 +21,8 @@ def jelszo():
     for i in range(hossz):
         randomChar = lehetosegek[random.randint(0, len(lehetosegek))]
         generalt_jelszo += randomChar
-
-    print(f"A generált jelszava: {generalt_jelszo}")
+    pyperclip.copy(generalt_jelszo)
+    print(f"A generált jelszava: {generalt_jelszo} \nA jelszava kimásolva!")
 
 
 jelszo()
